@@ -45,6 +45,9 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+a{
+  text-decoration: none;
+}
 section{
   margin: 0 0 25px;
 }
@@ -79,11 +82,18 @@ section{
   justify-content: center;
   align-items: center;
 }
-
+.login , .button{
+  background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
+  color: transparent;
+  background-size: 300%;
+  background-position: -100%;  
+  animation: animatedText 5s infinite alternate-reverse;
+  border-radius: 100%;
+}
 .button-nav:hover{
   cursor: pointer;
 }
-.hero{
+.hero , .loginSignMain{
   background-image: repeating-linear-gradient(45deg, transparent, transparent 100px, #181818 100px, #181818 200px);
   background-color: #000000;
   display: flex; 
@@ -93,6 +103,9 @@ section{
   height: 100vh; 
   color: white;
   animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.loginSignMain{
+  height: 90vh;
 }
 h1 , h5{
   background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
@@ -248,6 +261,33 @@ form input{
 }
 form textarea{
   height: 150px;
+}
+.formLoginSign{
+  max-width: 525px;
+  height: 400px;
+  justify-content: space-around;
+  text-align: center;
+}
+.formLoginSign label{
+  font-size: 1.2rem;
+}
+.formLoginSign .button{
+  font-size: 1.2rem;
+  width: 200px;
+  height: 48px;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 600;
+}
+.signIn{
+  color: rgb(175, 175, 175);
+  transition: 1s;
+  text-decoration: underline;
+}
+.signIn:hover{
+  color: black;
+  transition: 1s;
 }
 footer{
   background-color: rgb(255, 255, 255);
